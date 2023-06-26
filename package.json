@@ -1,0 +1,10 @@
+{
+  "name": "boilerexpress",
+  "license": "MIT",
+  "scripts": {
+    "clean:all": "rm -rf */node_modules */build */dist */yarn.lock",
+    "i:all": "yarn --cwd server install",
+    "update:save": "yarn --cwd server upgrade-interactive --latest",
+    "update:ncu": "cd server && npx npm-check-updates -u"
+  }
+}

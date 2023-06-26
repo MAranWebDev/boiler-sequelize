@@ -1,0 +1,16 @@
+/* babel */
+require('@babel/register');
+
+/* node */
+const path = require('path');
+
+/* paths */
+const configPath = path.join(__dirname, 'src/config');
+const folderPath = path.join(__dirname, 'src/db');
+
+module.exports = {
+  config: path.resolve(configPath, 'database.js'),
+  'models-path': path.resolve(folderPath, 'models'),
+  'seeders-path': path.resolve(folderPath, 'seeders'),
+  'migrations-path': path.resolve(folderPath, 'migrations'),
+};
