@@ -1,4 +1,4 @@
-// envs
+/* envs */
 export const {
   NODE_ENV,
   POSTGRES_DB,

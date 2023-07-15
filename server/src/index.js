@@ -9,8 +9,8 @@ import { userRoutes } from './routes/userRoutes';
 
 /* setup */
 const app = express();
-app.use(express.json()); /* accept json */
-app.use(express.urlencoded({ extended: true })); /* accept nested query */
+app.use(express.json()); // accept json
+app.use(express.urlencoded({ extended: true })); // accept nested query
 
 /* routes */
 app.use('/api', userRoutes);

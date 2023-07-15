@@ -6,8 +6,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'airbnb-base' /* airbnb without react */,
-    'prettier' /* prettier, make sure to put it last, to override other configs */,
+    'airbnb-base', // airbnb without react
+    'prettier', // prettier, make sure to put it last, to override other configs
   ],
   overrides: [
     {
@@ -16,15 +16,15 @@ module.exports = {
       parserOptions: { sourceType: 'script' },
     },
   ],
-  parser: '@babel/eslint-parser' /* babel parser */,
+  parser: '@babel/eslint-parser', // babel parser
   parserOptions: {
     requireConfigFile: false,
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
-    'import/prefer-default-export': 'off' /* don't force default exports */,
-    'import/no-commonjs': 2 /* avoid commonjs */,
-    'import/no-default-export': 1 /* prefer named exports */,
+    'import/prefer-default-export': 'off', // don't force default exports
+    'import/no-commonjs': 2, // avoid commonjs
+    'import/no-default-export': 1, // prefer named exports
   },
 };

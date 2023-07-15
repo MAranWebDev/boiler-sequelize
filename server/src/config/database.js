@@ -6,7 +6,7 @@ import {
   POSTGRES_PORT,
 } from './envs';
 
-// setup
+/* setup */
 const values = {
   username: POSTGRES_USER,
   password: POSTGRES_PASSWORD,
@@ -16,7 +16,7 @@ const values = {
   dialect: 'postgres',
 };
 
-// dialect
+/* dialect */
 const database = {
   development: values,
   test: values,
