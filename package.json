@@ -1,5 +1,5 @@
 {
-  "name": "boilerexpress",
+  "name": "boilersequelize",
   "license": "MIT",
   "scripts": {
     "clean:all": "rm -rf */node_modules */build */dist */yarn.lock",
