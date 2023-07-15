@@ -17,6 +17,7 @@ services:
     depends_on:
       - postgres
       - redis
+      - worker
 
   worker:
     build:

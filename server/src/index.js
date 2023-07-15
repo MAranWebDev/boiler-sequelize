@@ -5,7 +5,7 @@ import express from 'express';
 import { SERVER_PORT } from './config/envs';
 
 /* routes */
-import { usersRoutes } from './routes/usersRoutes';
+import { userRoutes } from './routes/userRoutes';
 
 /* setup */
 const app = express();
@@ -13,7 +13,7 @@ app.use(express.json()); /* accept json */
 app.use(express.urlencoded({ extended: true })); /* accept nested query */
 
 /* routes */
-app.use('/api', usersRoutes);
+app.use('/api', userRoutes);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello World' });

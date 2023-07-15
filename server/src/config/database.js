@@ -1,24 +1,27 @@
 import {
-  ORM_HOST,
-  POSTGRES_DB,
-  POSTGRES_PASSWORD,
-  POSTGRES_PORT,
   POSTGRES_USER,
+  POSTGRES_PASSWORD,
+  POSTGRES_DB,
+  POSTGRES_HOST,
+  POSTGRES_PORT,
 } from './envs';
 
+// setup
 const values = {
   username: POSTGRES_USER,
   password: POSTGRES_PASSWORD,
   database: POSTGRES_DB,
-  host: ORM_HOST,
+  host: POSTGRES_HOST,
   port: POSTGRES_PORT,
   dialect: 'postgres',
 };
 
-const environment = {
+// dialect
+const database = {
   development: values,
   test: values,
   production: values,
 };
 
-export const { development, test, production } = environment;
+export const { development, test, production } = database; // to run commands
+export default database; // to run server
