@@ -20,4 +20,4 @@ RUN chown node:node /usr/src/app/node_modules
 USER node
 
 ## start app
-CMD ["npm", "run", "queues:docker"]
+CMD ["npm", "run", "worker:docker"]

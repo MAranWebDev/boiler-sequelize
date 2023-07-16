@@ -2,7 +2,7 @@
   "name": "boilersequelize",
   "license": "MIT",
   "scripts": {
-    "clean:all": "rm -rf */node_modules */build */dist */yarn.lock",
+    "clean:all": "rm -rf */node_modules */build */dist */yarn.lock */package-lock.json",
     "i:all": "yarn --cwd server install",
     "update:save": "yarn --cwd server upgrade-interactive --latest",
     "update:ncu": "cd server && npx npm-check-updates -u"
